@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap");
+
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  html,
+  body,
+  #root,
+  .app {
+    @apply h-full w-full m-0 p-0 font-rubik;
+  }
+  .layout {
+    @apply w-full flex;
+  }
+
+  .servers {
+    @apply bg-primary-500;
+  }
+
+  .flex-between {
+    @apply flex justify-between items-center gap-2.5;
+  }
+}
+
+/* Chat Styling */
+.ce-chat-engine {
+  @apply text-tertiary-50 font-rubik !important;
+}
+/* CHAT LIST */
+.ce-chat-list {
+  @apply overflow-y-hidden !important;
+}
+
+.header-text {
+  @apply mx-2.5 my-0 !important;
+}
+
+.ce-chat-list-column {
+  @apply bg-primary-600 overflow-y-hidden border-r border-solid border-primary-600 border-opacity-0 !important;
+}
+
+.ce-chat-form {
+  @apply bg-primary-600 !important;
+}
+
+.ce-chat-form-title {
+  @apply top-5 font-bold font-rubik text-2xl !important;
+}
+
+.ce-chat-form-button {
+  @apply text-primary-600 border-none rounded-3xl py-1 px-4 !important;
+}
+
+.ce-chat-list {
+  @apply bg-primary-600 !important;
+}
+
+.ce-chat-card {
+  @apply py-0 px-5 rounded-none !important;
+}
+
+.ce-chat-card-title {
+  @apply top-4 font-rubik !important;
+}
+
+.ce-chat-card-subtitle {
+  @apply text-tertiary-100 font-rubik font-light bottom-4 !important;
+}
+
+.ce-chat-card-time-stamp {
+  @apply bottom-4 text-gray-400 font-rubik right-4 !important;
+}
+
+.ce-active-chat-card {
+  @apply bg-secondary-800 text-tertiary-100 !important;
+}
+
+.ce-chat-card-unread {
+  @apply bg-accent-500 right-4 !important;
+}
+
+.ce-chat-card-avatar {
+  @apply left-4 !important;
+}
+
+

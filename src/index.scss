@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap");
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 $gray-300: #a3a3a3;
 $gray-400: #858585;
@@ -28,6 +25,11 @@ body,
 
   font-family: "Rubik", sans-serif;
 }
+
+.basis-full {
+  flex-basis: 100%;
+}
+
 
 .layout {
   width: 100%;
